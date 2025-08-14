@@ -5,11 +5,9 @@
 [![FastF1](https://img.shields.io/badge/FastF1-2.3+-red.svg)](https://theoehrly.github.io/Fast-F1/)
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-visualization-yellow.svg)](https://matplotlib.org/)
 
-> **Predict, analyze, and visualize Formula 1 race strategies using historical telemetry, simulated weather, and performance modelling — all in one Kaggle-ready notebook.**
+> **Predict and visualize Formula 1 race strategies using telemetry, simulated weather, and performance modelling in a Kaggle-ready notebook.**
 
-This repository contains a Jupyter Notebook for advanced **Formula 1 strategy analysis and prediction**. Using [FastF1](https://theoehrly.github.io/Fast-F1/) data, it enables deep telemetry exploration, tyre degradation modelling, pit stop simulations, and multi-factor outcome projections without needing any API keys.
-
----
+This repository contains a **Jupyter Notebook** built for advanced Formula 1 strategy prediction. Leveraging [FastF1](https://theoehrly.github.io/Fast-F1/) for official timing and telemetry, it combines race history, tyre wear models, and environmental factors to project race outcomes — no API keys required.
 
 ## 📋 Table of Contents
 
@@ -22,77 +20,60 @@ This repository contains a Jupyter Notebook for advanced **Formula 1 strategy an
 * [Example Outputs](#-example-outputs)
 * [Technical Notes](#-technical-notes)
 
----
-
 ## 🎯 About
 
-The **F1 Strategy Predictor** simulates race strategies by combining historical telemetry with user-selected parameters such as Grand Prix location, driver, weather conditions, and tyre strategy. The result is an interactive and visual approach to understanding competitive decision-making in F1.
-
----
+**F1 Strategy Predictor** is an interactive analysis tool where you choose a season, Grand Prix, driver, and conditions to see how strategies unfold. It integrates historical telemetry with simulated weather and pit strategies to show how races could play out.
 
 ## ✨ Features
 
-* 📅 **Interactive Parameter Selection** — Year → Grand Prix → Session → Driver
-* 📈 **High-Resolution Telemetry Analysis** — Lap time trends, sector splits, speed traces
-* 🛞 **Tyre Degradation Modelling** — Regression-based wear estimation
-* 🌦 **Simulated Weather Adjustments** — Temperature, wind, rain probability
-* 🔄 **Strategy Comparison Mode** — Pit stop timing & tyre choice simulations
-* 🏁 **Race Replay Projection** — Simulated position changes throughout the race
-* 💾 **Offline Cache** — FastF1 SQLite caching for re-runs without internet
-
----
+* 📅 **Interactive Selection** — Choose season, Grand Prix, driver
+* 📈 **Telemetry Insights** — Lap time, sector performance, speed traces
+* 🛞 **Tyre Wear Modelling** — Estimate degradation over laps
+* 🌦 **Simulated Weather** — Adjust track temperature, wind, rain probability
+* 🔄 **Strategy Comparison** — Pit stop timing and compound choice scenarios
+* 🏁 **Race Replay** — Simulated position changes over race distance
+* 💾 **Offline Ready** — Cached data for repeat sessions
 
 ## 🏗️ Architecture
 
 ```
 User Input → FastF1 Data Fetch → Pandas/Numpy Preprocessing
-Widgets & Controls → Matplotlib/Plotly Visuals
-Weather Simulation → Strategy Model Engine → Analysis Outputs
+Interactive Widgets → Strategy Engine → Visual Outputs
 ```
-
----
 
 ## 🛠️ Installation
 
-### Kaggle (Recommended)
+**Kaggle (Recommended)**
 
-1. Go to [Kaggle Notebooks](https://www.kaggle.com/code)
-2. Start a **New Notebook**
+1. Open [Kaggle Notebooks](https://www.kaggle.com/code)
+2. Create a **New Notebook**
 3. Upload `f1_predictor.ipynb`
-4. Run cells sequentially to interact with the strategy predictor
-
----
+4. Run all cells in order
 
 ## 🚀 Usage
 
-1. Select **season**, **Grand Prix**, and **driver**
-2. Adjust simulated **weather** and **tyre strategy**
-3. Run analysis to get telemetry graphs, tyre usage charts, and position simulations
-4. Compare different strategies to see possible race outcomes
-
----
+1. Choose season, Grand Prix, and driver
+2. Set simulated weather and tyre strategy
+3. Run the notebook for telemetry, strategy, and simulation outputs
+4. Compare alternate race strategies visually
 
 ## 🔄 Workflow
 
-1. **Data Acquisition** — Load & cache session data via FastF1
-2. **Processing** — Merge lap telemetry, weather simulation, pit stop data
-3. **Interaction** — User sets race parameters
-4. **Computation** — Model degradation & simulate results
-5. **Visualization** — Output strategy charts and replay graphs
-
----
+1. **Acquire Data** — Load & cache GP session data
+2. **Process** — Merge telemetry, pit stop, and synthetic weather
+3. **User Interaction** — Configure race parameters
+4. **Simulation** — Apply tyre wear models & strategy logic
+5. **Visualization** — Generate plots and race replay graphs
 
 ## 📊 Example Outputs
 
-* **Lap Time Trends** — Driver pace evolution
-* **Tyre Strategy Charts** — Compound usage and change points
-* **Pit Stop Analysis** — Tabular + visual breakdown
-* **Race Position Simulation** — Projected position changes over laps
-
----
+* Lap time progression
+* Tyre compound usage timelines
+* Pit stop breakdowns
+* Position change simulations
 
 ## 🧠 Technical Notes
 
-* Initial data load may take a few minutes for new GP sessions
-* Weather simulation is synthetic, no external API used
+* First-time data load may take several minutes
+* Weather is simulated — no external API
 * Clear FastF1 cache to refresh data
