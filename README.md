@@ -1,6 +1,7 @@
 # 🏎️ F1 Strategy Predictor
 
-[![Open In Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/#scrollTo=P4HZqbKe399i&fileId=https%3A//storage.googleapis.com/kaggle-colab-exported-notebooks/kritikmahesh/f1-predictor-ipynb.49bfd94d-0b3a-4687-b3ca-f99d2fc5d4b1.ipynb%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Dgcp-kaggle-com%2540kaggle-161607.iam.gserviceaccount.com/20250815/auto/storage/goog4_request%26X-Goog-Date%3D20250815T131623Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D9b44c208bebcad55024f16e2be2c65a3ca58fae00b9bac4de89005ceda24bc0ab46a7884fd46cc10629483da4786f00123812d3282a2fafb1ca7afcd3a65ff1ef81a30e4b79582fd0f56be79b94afc0c93f70ed000fdd77bd536d4147c3700cb3d7d7e6cebc049f65158a82eb098e63bc0a82486300ac4959d33d28cf70def7bbb2b2e3cb49f2bf63d64cdd8a374a34708c7829932daf8df7c800d5a8b9c0bbf6047053122db7ae3d070483e6cf11c3d851c3fb3b2eedf26fe74b628fa49d3c12fc6f1ecc072f7db634939da1f84084a39b66642f85d0b2b7c90280668717a42f382780926d32caee42193d4eecf363bc3d6bc9123e0464b7136475d73565be3)
+
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![FastF1](https://img.shields.io/badge/FastF1-2.3+-red.svg)](https://theoehrly.github.io/Fast-F1/)
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-visualization-yellow.svg)](https://matplotlib.org/)
