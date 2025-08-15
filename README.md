@@ -77,3 +77,8 @@ Interactive Widgets → Strategy Engine → Visual Outputs
 * First-time data load may take several minutes
 * Weather is simulated — no external API
 * Clear FastF1 cache to refresh data
+
+---
+
+## ^.^/
+  
